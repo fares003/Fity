@@ -16,7 +16,7 @@ function BMIPage() {
     return weight / (heightInMeters * heightInMeters);
   };
   return (
-    <div className=" relative pt-24 h-screen overflow-hidden">
+    <div className=" relative pt-24 h-fit overflow-hidden">
       <div className="flex flex-col  gap-8 px-8 mb-12">
       <div className="flex gap-4 text-xl font-semibold text-white">
         <button className={`relative cursor-pointer  p-[2px] ${gender === "male" ? "bg-gradient-to-r from-red-500 to-red-700" : "bg-gray-700"}`} onClick={() => setGender("male")}>
