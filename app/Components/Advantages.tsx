@@ -3,7 +3,7 @@ import { Edge } from "@/Types/EdgesType";
 function Advantages({ Edge }: { Edge: Edge }) {
   return (
     <div
-      className={`flex flex-col border  border-r-4 p-4 ${
+      className={`flex flex-col   border-r-4 p-4 ${
         Edge.id % 2 === 0 ? "border-r-orange-500" : "border-r-red-500"
       }`}
     >

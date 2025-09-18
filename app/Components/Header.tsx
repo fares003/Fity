@@ -8,7 +8,7 @@ type HeaderProps = {
 };
 const Header: React.FC<HeaderProps> = ({ links, icon, className,LinksStyle }) => {
   return (
-    <div className={`flex justify-between items-center p-4 bg-blue-500  ${className}`}>
+    <div className={`flex justify-between items-center z-25  p-4   ${className}`}>
         <div className='text-lg font-bold max-w-sm'>
           {icon}
         </div>
