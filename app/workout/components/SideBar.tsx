@@ -9,7 +9,7 @@ export interface itemsProps  {
 }
 export const Sidebar = ({ items, open, setOpen }: { items: itemsProps[]; open: boolean; setOpen: React.Dispatch<React.SetStateAction<boolean>> }) => {
   return (
-    <div className={`w-full h-screen bg-gray-800 text-white p-4 pt-16 transition-all duration-300`}>
+    <div className={`w-full h-screen bg-white shadow-md text-black p-4  transition-all duration-300`}>
       <h2 className={`${open ? '' : 'justify-center'} text-2xl justify-between flex w-full font-bold mb-6`}>{open&& <span> sidebar</span>} <span onClick={() => setOpen(!open)}><GiHamburgerMenu /></span></h2>
       {open &&
       <ul>

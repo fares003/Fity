@@ -1,9 +1,12 @@
 import React from 'react'
 import Card from '../Components/Card'
+import WelcomeBar from './components/WelcomeBar'
+
 function page() {
   return (
-    <div className='h-screen bg-gray-200  px-8 py-16'>
-        <Card className='p-12 bg-[#bb43da]' body={<div className='font-bold text-xl'>Add Workout</div>}/>
+    <div className='h-screen bg-gray-200  p-4 '>
+        <WelcomeBar mainTitle='Welcome back champion! ' subTitle='Ready to crush your workout today?🔥🔥'/>
+        <Card className='p-12 bg-white' body={<div className='font-bold text-xl'>Add Workout</div>}/>
     </div>
   )
 }
