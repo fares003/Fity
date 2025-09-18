@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
 
 
@@ -34,4 +35,17 @@ body {
 }
 .footerGray{
   background-color: #1c1c1c;
+}
+
+
+.centerBackgroundImagePage{
+  background-image: url(../public/images/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+::selection{
+  background-color: #111111;
+  color: #df1c1c;
 }

@@ -2,11 +2,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Anton } from "next/font/google";
+import { Bangers } from "next/font/google";
+import { a } from "motion/react-client";
 import Header from "./Components/Header";
 import { HeaderData } from "@/StaticData/HeaderData";
-import { Anton } from "next/font/google";
-import { a } from "motion/react-client";
-import { Bangers } from "next/font/google";
 import Footer from "@/sections/Footer";
 import { Main } from "next/document";
 import MainLayout from "./layouts/MainLayout";
