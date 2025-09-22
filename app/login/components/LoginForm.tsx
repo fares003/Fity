@@ -1,13 +1,19 @@
 "use client";
 import { loginValidationSchema } from "./Validator";
 import { loginInitialValues } from "./FormInitialValues";
-import { handleSubmit } from "./HandleLogin";
 import FormComponent from "./Form";
 import Link from "next/link";
 import { fieldsArray } from "./LoginFieldes";
+import { useAuthStore } from "@/store/useAuthStore";
+import api from "@/lib/axios";
 
 const LoginForm = () => {
-  
+    const setToken = useAuthStore((state) => state.setToken);
+
+  async function handleSubmit() {
+    const res = await api.post("/api/Auth/login", { email: "test", password: "1234" });
+    setToken(res.data.token); 
+  }
   return (
     <>
       <div

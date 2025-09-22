@@ -13,7 +13,7 @@ interface Props {
 }
 function Card({ title,className,icon,value,unit,chart,Header,body,footer,children,...rest }: Props) {
   return (
-    <div className={`flex flex-col w-fit  text-black gap-4 p-4 border-2 border-gray-500  rounded-lg ${className}`} {...rest}>
+    <div className={`flex flex-col w-fit  text-black  p-4 border-2 border-gray-500  rounded-lg ${className}`} {...rest}>
         {title && icon && (
           <div className='flex items-center w-full justify-between'>
             <h2 className="text-lg font-semibold">{title}</h2>

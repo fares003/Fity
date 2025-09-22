@@ -4,15 +4,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Anton } from "next/font/google";
 import { Bangers } from "next/font/google";
-import { a } from "motion/react-client";
-import Header from "./Components/Header";
-import { HeaderData } from "@/StaticData/HeaderData";
-import Footer from "@/sections/Footer";
-import { Main } from "next/document";
-import MainLayout from "./layouts/MainLayout";
-
-import { shouldShowFooter, shouldShowNavbar } from "@/Utils/LayoutOptions";
 import ClientLayoutController from "./workout/components/ClientLayout";
+import Providers from "./provider";
+
 const bangers = Bangers({
   subsets: ["latin"],
   weight: "400",
@@ -49,7 +43,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${bangers.variable} ${anton.variable} antialiased`}
       >
-       <ClientLayoutController>{children}</ClientLayoutController>
+        <Providers>
+          <ClientLayoutController>{children}</ClientLayoutController>
+        </Providers>
       </body>
     </html>
   );
