@@ -43,7 +43,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+.lightGreen{
+  background-color: #B2FF59;
+}
 ::selection{
   background-color: #111111;
   color: #df1c1c;

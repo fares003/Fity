@@ -1,6 +1,8 @@
 import React from "react";
 import WelcomeBar from "../components/WelcomeBar";
 import Kcal from "./components/Kcal";
+import { Bar } from "recharts";
+import BieChart from "@/app/Components/BieChart";
 const childrenStyle="p-4 rounded-xl flex flex-col gap-4 bg-white shadow-md text-black flex-1"
 function page() {
   return (
@@ -25,6 +27,7 @@ function page() {
          <p className="text-xl font-bold mb-4 capitalize">
         Activity
         </p>
+        <BieChart />
   </div>
 </div>
 

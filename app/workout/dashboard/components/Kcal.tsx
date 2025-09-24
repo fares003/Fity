@@ -19,7 +19,7 @@ function Kcal() {
         footer={
             <p className='text-sm text-gray-500'>Goal: 3,000 kcal</p>
         }
-        className='gap-2 flex-1 border-none shadow-xl bg-gradient-to-t from-yellow-200 to-slate-50'
+        className='gap-2 flex-1 border-none shadow-xl bg-gradient-to-t from-[#B2FF59] to-slate-50'
         />
          <Card Header={
             <h1>
@@ -35,7 +35,7 @@ function Kcal() {
         footer={
             <p className='text-sm text-gray-500'>maximum</p>
         }
-        className='gap-2 flex-1 border-none shadow-xl bg-gradient-to-t from-yellow-200 to-slate-50'
+        className='gap-2 flex-1 border-none shadow-xl bg-gradient-to-t from-[#B2FF59] to-slate-50'
         />
     </div>
   )
