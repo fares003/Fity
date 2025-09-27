@@ -5,15 +5,12 @@ import FormComponent from "./Form";
 import Link from "next/link";
 import { fieldsArray } from "./LoginFieldes";
 import { useAuthStore } from "@/store/useAuthStore";
-import api from "@/lib/axios";
+import { handleSubmit } from "./HandleLogin";
 
 const LoginForm = () => {
     const setToken = useAuthStore((state) => state.setToken);
 
-  async function handleSubmit() {
-    const res = await api.post("/api/Auth/login", { email: "test", password: "1234" });
-    setToken(res.data.token); 
-  }
+ 
   return (
     <>
       <div
@@ -24,7 +21,7 @@ const LoginForm = () => {
           buttonName="sign in"
           formInitialValues={loginInitialValues}
           formType="login"
-          handleSubmit={handleSubmit}
+          handleSubmit={(values) => handleSubmit(values, setToken)}
           validationSchema={loginValidationSchema}
           inputFieldes={fieldsArray}
         >

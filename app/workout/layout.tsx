@@ -1,13 +1,10 @@
 'use client'
 import React from 'react'
-import { IoMdHome } from "react-icons/io";
-import { FaDumbbell } from "react-icons/fa";
-import { Sidebar } from './components/SideBar';
 
-const sidebarItems = [
-  { label: 'Home', href: '/', icon: <IoMdHome /> },
-  { label: 'Workouts', href: '/workout', icon: <FaDumbbell /> },
-];
+import { Sidebar } from './components/SideBar';
+import { sidebarItems } from '@/StaticData/SideBarData';
+
+
 
 export default function workoutLayout({children}: {children: React.ReactNode}) {
   const [open, setOpen] = React.useState(true);

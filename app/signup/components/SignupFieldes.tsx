@@ -1,8 +1,13 @@
 export const signupFieldsArray = [
-  {
-    name: "username",
+    {
+    name: "firstName",
     type: "text",
-    placeholder: "Enter your full name here...",
+    placeholder: "Enter your first name here...",
+  },
+  {
+    name: "lastName",
+    type: "text",
+    placeholder: "Enter your last name here...",
   },
   { name: "email", type: "email", placeholder: "Enter your email here ..." },
   {
@@ -14,5 +19,15 @@ export const signupFieldsArray = [
     name: "confirmPassword",
     type: "password",
     placeholder: "Confirm your password here...",
+  },
+
+    {
+    name: "weight",
+    type: "number",
+    placeholder: "Enter your weight here...",
+  },
+  {    name: "height",
+    type: "number",
+    placeholder: "Enter your height here...",
   },
 ];
